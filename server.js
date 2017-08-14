@@ -13,13 +13,7 @@ app.get('/artical-one', function (req,res){
 
   res.sendFile(path.join(__dirname,'mustakim.html'));
 });
-app.get('/artical-two', function (req,res){
- res.sendFile(path.join(__dirname, 'ui', 'mustakim2.html'));
-});
-app.get('/artical-three', function (req,res){
-    res.sendFile(path.join(__dirname,'ui', 'mustakim3.html'));
 
-});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
