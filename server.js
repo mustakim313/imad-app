@@ -10,8 +10,8 @@ app.get('/', function (req, res) {
 });
 app.get('/artical-one', function (req,res){
 });
-    res.send('artical one is requested and will be served here');
-}
+    res.send('Artical one is requested and will be served here')
+});
 app.get('/artical-two', finction (req,res){
 });
     res.send('artical two is requested and will be served here')
