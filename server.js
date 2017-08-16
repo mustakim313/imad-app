@@ -22,8 +22,7 @@ content:`  <p>
 </p>
 <p>
     3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
-</p>`
-},
+</p>`,},
    'article-two':{
 title: 'Article Two | mustakim kureshi',
 heading: 'Article Two',
@@ -33,7 +32,7 @@ This is the content for my second article.
 </p>
 <p>
 2nd paragrapfh This is the content for my second article.
-</p>`
+</p>`,
    },
    'article-three':{
 title: 'Article Three| mustakim kureshi',
@@ -45,7 +44,7 @@ This is the content for my thierd article.
 </p>
 <p>
 2nd paragrapfh This is the content for my third article.
-</p>`
+</p>`,
    }
    };
    function createTemplate(data){
