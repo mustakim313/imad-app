@@ -71,12 +71,12 @@ This is the content for my thierd article.
         </div>
        <hr>
         <h3>
-       ${heading}
+       ${heading};
        </h3>
        <div>
-       ${date}
+       ${date};
        </div>f
-       ${content}
+       ${content};
        </div>
     </body>
         
