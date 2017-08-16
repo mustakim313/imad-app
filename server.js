@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
   
    var articles={
-   articleOne:{
+   'article-one':{
 title: 'Article one | mustakim kureshi',
 heading: 'Article one',
 date: 'Aug 16 2017',
@@ -24,7 +24,7 @@ This is the content for my first article.This is the content for my first articl
 3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
 </p>`
 },
-   articleTwo:{
+   'article-two':{
 title: 'Article Two | mustakim kureshi',
 heading: 'Article Two',
 date: 'Aug 17 2017',
@@ -35,7 +35,7 @@ This is the content for my second article.
 2nd paragrapfh This is the content for my second article.
 </p>
    },`},
-  articleThree:{
+   'articleThree':{
 title: 'Article Three| mustakim kureshi',
 heading: 'Article Three',
 date: 'Aug 18 2017',
@@ -84,9 +84,11 @@ This is the content for my thierd article.
   `;
   return htmlTemplet;
    }
-app.get('/artical-one', function (req,res){
+app.get('/:articleName', function (req,res){
+    var articleName = req.params.articleName;
+    
 
-  res.send(createTemplate(articleOne));
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
