@@ -84,7 +84,7 @@ This is the content for my thierd article.
   return htmlTemplate;
 }
 var counter=0;
- app.get('/conter',function(req,res){
+ app.get('/counter',function(req,res){
  counter=counter + 1;
  res.send(counter.toString());
  });
