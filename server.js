@@ -49,14 +49,14 @@ This is the content for my thierd article.
    },`
   },
    };
-   function createTemplet(data){
+   function createTemplate(data){
        var title = data.title;
        var date = data.date;
        var heading = data.heading;
        var content = data.cntent;
        
        
-    var htmlTemplet =`
+    var htmlTemplate=`
         <html>
     <head>
         <title>
@@ -82,7 +82,7 @@ This is the content for my thierd article.
         
     </html>
   `;
-  return htmlTemplet;
+  return htmlTemplate;
   } 
   app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
