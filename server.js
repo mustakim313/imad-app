@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
     };
     
    function createTemplate(data){
-       var titile = data.title;
+       var title = data.title;
        var date = data.date;
        var heading = data.heading;
        var conten = data.cntent;
