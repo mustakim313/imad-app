@@ -15,13 +15,13 @@ title: 'Article one | mustakim kureshi',
 heading: 'Article one',
 date: 'Aug 16 2017',
 content:`  <p>
-This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+     This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
 </p>
 <p>
-2nd paragrapfh This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+     2nd paragrapfh This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
 </p>
 <p>
-3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+    3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
 </p>`
 },
    'article-two':{
@@ -33,8 +33,8 @@ This is the content for my second article.
 </p>
 <p>
 2nd paragrapfh This is the content for my second article.
-</p>
-   },`},
+</p>`
+   },
    'article-three':{
 title: 'Article Three| mustakim kureshi',
 heading: 'Article Three',
@@ -94,7 +94,6 @@ app.get('/:articleName', function (req,res){
 
   res.send(createTemplate(articles[articleName]));
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
