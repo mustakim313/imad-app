@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 title: 'Article one | mustakim kureshi',
 heading: 'Article one',
 date: 'Aug 16 2017',
-content:`  <p>
+content:`<p>
      This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
 </p>
 <p>
@@ -22,7 +22,8 @@ content:`  <p>
 </p>
 <p>
     3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
-</p>`,},
+</p>`
+},
    'article-two':{
 title: 'Article Two | mustakim kureshi',
 heading: 'Article Two',
@@ -46,12 +47,12 @@ This is the content for my thierd article.
 2nd paragrapfh This is the content for my third article.
 </p>`,
    }
-   };
-   function createTemplate(data){
-       var title = data.title;
-       var date = data.date;
-       var heading = data.heading;
-       var content = data.content;
+   
+};   function createTemplate(data){
+       var title = data.title ;
+       var date = data.date ;
+       var heading = data.heading ;
+       var content = data.content ;
        
        
     var htmlTemplate=`
@@ -87,10 +88,8 @@ This is the content for my thierd article.
 });
   
   
-app.get('/:articleName', function (req,res){
+app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
-    
-
   res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
