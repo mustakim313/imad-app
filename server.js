@@ -35,7 +35,7 @@ This is the content for my second article.
 2nd paragrapfh This is the content for my second article.
 </p>
    },`},
-   'articleThree':{
+   'article-three':{
 title: 'Article Three| mustakim kureshi',
 heading: 'Article Three',
 date: 'Aug 18 2017',
@@ -56,7 +56,7 @@ This is the content for my thierd article.
        var content = data.cntent;
        
        
-    var htmlTemlate =`
+    var htmlTemplate =`
         <html>
     <head>
         <title>
