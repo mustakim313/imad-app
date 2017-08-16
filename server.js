@@ -49,14 +49,14 @@ This is the content for my thierd article.
    },`
   },
    };
-   function createTemplate(data){
+   function createTemplet(data){
        var title = data.title;
        var date = data.date;
        var heading = data.heading;
        var content = data.cntent;
        
        
-    var htmlTemplate =`
+    var htmlTemplet =`
         <html>
     <head>
         <title>
