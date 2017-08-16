@@ -9,22 +9,46 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
   
-   var articleOne=
-   {
-       title: 'Article one | mustakim kureshi',
-       heading: 'Article one',
-       date: 'Aug 16 2017',
-       content:`  <p>
-            This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
-    </p>
-    <p>
-           2nd paragrapfh This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
-    </p>
-    <p>
-            3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
-    </p>`
-    };
-    
+   var articles={
+   articleOne:{
+title: 'Article one | mustakim kureshi',
+heading: 'Article one',
+date: 'Aug 16 2017',
+content:`  <p>
+This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+</p>
+<p>
+2nd paragrapfh This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+</p>
+<p>
+3rd paragraph This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first articlhis is the content for my first article. This is the content for my first article This is the content for my first articleThis is the content for my first article.This is the content for my first article.  
+</p>`
+},
+   articleTwo:{
+title: 'Article Two | mustakim kureshi',
+heading: 'Article Two',
+date: 'Aug 17 2017',
+content:`  <p>
+This is the content for my second article.
+</p>
+<p>
+2nd paragrapfh This is the content for my second article.
+</p>
+   },`},
+  articleThree:{
+title: 'Article Three| mustakim kureshi',
+heading: 'Article Three',
+date: 'Aug 18 2017',
+content:` 
+<p>
+This is the content for my thierd article.
+</p>
+<p>
+2nd paragrapfh This is the content for my third article.ffff
+</p>
+   },`
+  },
+   };
    function createTemplate(data){
        var title = data.title;
        var date = data.date;
