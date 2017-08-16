@@ -45,9 +45,8 @@ This is the content for my thierd article.
 </p>
 <p>
 2nd paragrapfh This is the content for my third article.ffff
-</p>
-   },`
-  },
+</p>`
+   },
    };
    function createTemplate(data){
        var title = data.title;
