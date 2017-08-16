@@ -53,7 +53,7 @@ This is the content for my thierd article.
        var title = data.title;
        var date = data.date;
        var heading = data.heading;
-       var conten = data.cntent;
+       var content = data.cntent;
        
        
     var htmlTemlate =`
