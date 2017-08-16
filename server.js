@@ -54,8 +54,9 @@ This is the content for my thierd article.
        var heading = data.heading ;
        var content = data.content ;
        
-       
-    var htmlTemplate=`
+}  
+   { var htmlTemplate=`
+    
         <html>
     <head>
         <title>
@@ -82,7 +83,7 @@ This is the content for my thierd article.
     </html>
   `;
   return htmlTemplate;
-  } 
+  }
   app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
