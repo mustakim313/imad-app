@@ -5,9 +5,9 @@ var counter=0;
 button.onclick= function (){
     var request = new XMLHttpRequest();
     request.onreadystatechange =function(){
-        if(request.readystate===XmLhttpRequest.DONE){
-            if(request.status==200){
-                var counter =request.ResponseText;
+        if(request.readystate===XMLhttpRequest.DONE){
+            if(request.status===200){
+                var counter =request.responseText;
                 var span = document.getElementById('count');
 span.innerHTML= counter.toString();
             }
