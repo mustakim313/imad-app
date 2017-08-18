@@ -15,7 +15,7 @@ span.innerHTML= counter.toString();
     }
 
 ;
-request.open('GET','http://mustakimkureshi313.imad.hasura-app.io/countr',true);
+request.open('GET','http://mustakimkureshi313.imad.hasura-app.io/counter',true);
 request.send(null);
 
 };
